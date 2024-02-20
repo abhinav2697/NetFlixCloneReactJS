@@ -1,10 +1,18 @@
-import './App.css';
+import React from 'react';
+import Navbar from "./components/Navbar";
+import Home from './Pages/Home';
+import {Routes,Route} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Netflix Clone</h1>
-    </div>
+    <>
+    
+      <Navbar />
+      <Routes>
+        <Route path='/' element={Home} />
+      </Routes>
+     
+    </>
   );
 }
 
